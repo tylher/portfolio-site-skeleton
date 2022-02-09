@@ -2,71 +2,60 @@
 
 # Project Name
 
-> Description the project.
-
+> Portfolio Site Skeleton.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+- HTML
+- CSS
 
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+Figma
+HTML
+CSS
+
 ### Setup
+
+- Web browser
+- git
+- github
+- VsCode
+- Figma(Optional)
 
 ### Install
 
+Get Figma design [here](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=0%3A1)
+
+Install chrome web browser [here](https://www.google.com/chrome/?brand=CHBD&gclid=Cj0KCQiAxoiQBhCRARIsAPsvo-x1uykgg9kaxqBkRBz4WkrBWMJeGxeQBJrMtA8t3lU22e1y883KQy8aAtMNEALw_wcB&gclsrc=aw.ds)
+
 ### Usage
 
-### Run tests
+- visit the github repository and clone [here](https://github.com/tylher/hello-microverse)
 
-### Deployment
-
-
+- start editing using your local developmen environment.
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@tylher](https://github.com/tylher)
+- Twitter: [@tylher123](https://twitter.com/tylher123)
+- LinkedIn: [Taiwo Adediran](https://www.linkedin.com/in/taiwo-adediran-327654127/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
-
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
