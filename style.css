@@ -63,7 +63,6 @@ header {
 .socials {
   padding: 0;
   display: flex;
-  justify-content: baseline;
   align-items: center;
 }
 
