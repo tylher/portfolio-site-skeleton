@@ -49,6 +49,16 @@ header {
   color: #172b4d;
 }
 
+.tech > span {
+  padding: 8px 12px;
+  margin-right: 8px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
 .headline h1 > span {
   color: #36b37e;
 }
@@ -174,15 +184,7 @@ header {
   margin: auto 11px;
 }
 
-.tech > span {
-  padding: 8px 12px;
-  margin-right: 8px;
-  background: #ebf0ee;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-}
+
 
 .tech > span:last-child {
   margin-right: 0;
