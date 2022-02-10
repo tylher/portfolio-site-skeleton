@@ -41,7 +41,7 @@ header {
   flex-direction: column;
 }
 
-.headline h2 {
+.headline h1 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -49,7 +49,7 @@ header {
   color: #172b4d;
 }
 
-.headline h2 > span {
+.headline h1 > span {
   color: #36b37e;
 }
 
@@ -63,15 +63,21 @@ header {
 .socials {
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.socials li {
+  list-style: none;
 }
 
 .social {
   width: auto;
   margin-right: 20px;
+  align-self: center;
 }
 
-.socials:last-child {
+.social:last-child {
   margin-right: 0;
 }
 
