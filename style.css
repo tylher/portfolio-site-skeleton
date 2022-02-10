@@ -28,6 +28,7 @@ header {
   font-size: 20px;
   line-height: 28px;
 }
+
 .headline {
   height: 648px;
   background-image: url("images/header-illsutration-mobile@2x.svg");
@@ -64,6 +65,7 @@ header {
   display: flex;
   justify-content: center;
 }
+
 .social {
   width: auto;
   margin-right: 20px;
