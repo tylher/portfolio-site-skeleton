@@ -94,6 +94,7 @@ header {
   padding-right: 22px;
   text-align: center;
 }
+
 .my-works h2 {
   font-weight: 700;
   font-size: 40px;
@@ -173,7 +174,7 @@ header {
   margin: auto 11px;
 }
 
-.tech span {
+.tech > span {
   padding: 8px 12px;
   margin-right: 8px;
   background: #ebf0ee;
@@ -183,7 +184,7 @@ header {
   line-height: 16px;
 }
 
-.tech span:last-child {
+.tech > span:last-child {
   margin-right: 0;
 }
 
