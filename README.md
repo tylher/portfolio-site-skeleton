@@ -1,10 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-
-> Portfolio Site Skeleton.
+# Portfolio Site Skeleton.
 
 - Created mobile view of the header and the headline section for a portfolio website
+- Added a portfolio section to view projects and an about-me page
+- Added a background feel to make the site look good
 
 ## Built With
 
