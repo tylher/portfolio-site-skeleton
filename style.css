@@ -99,6 +99,7 @@ header {
   font-size: 40px;
   line-height: 52px;
   margin-bottom: 24px;
+  color: #172b4d;
 }
 
 .my-works > img {
@@ -112,6 +113,7 @@ header {
 
 .Works > div {
   height: 474px;
+  width: 327px;
   position: relative;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
@@ -135,6 +137,7 @@ header {
 
 .text-box h2 {
   grid-column: 1/5;
+  color: #3a4a42;
   margin-top: 16px;
   margin-bottom: 16px;
   font-weight: 600;
@@ -182,4 +185,60 @@ header {
 
 .tech span:last-child {
   margin-right: 0;
+}
+
+.about-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 68px;
+}
+
+.about-content > img {
+  position: absolute;
+  bottom: 0;
+  left: -11px;
+}
+
+.about-content h1 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.about {
+  width: 100%;
+  background: url("images/illustration-2-about-me-mobile.svg") bottom left,
+    url("images/Mask-Group.svg") top right;
+  background-repeat: no-repeat;
+  padding: 0 12px;
+}
+
+.about-content > p {
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+  text-align: center;
+  font-weight: 400;
+  margin: 24px auto;
+  padding: 5px;
+}
+
+.resume-btn {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: #36b37f;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.resume-btn a {
+  color: white;
+  text-decoration: none;
 }
