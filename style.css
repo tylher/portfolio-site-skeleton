@@ -49,7 +49,7 @@ header {
   color: #172b4d;
 }
 
-.tech > span {
+.tech > li {
   padding: 8px 12px;
   margin-right: 8px;
   background: #ebf0ee;
@@ -57,6 +57,7 @@ header {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
+  list-style: none;
 }
 
 .headline h1 > span {
@@ -178,6 +179,11 @@ header {
   border-radius: 4px;
 }
 
+.resume-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .see-project a:hover {
   background: #36b37f;
   box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
@@ -193,7 +199,7 @@ header {
   margin: auto 11px;
 }
 
-.tech > span:last-child {
+.tech > li:last-child {
   margin-right: 0;
 }
 
@@ -220,7 +226,8 @@ header {
 
 .about {
   width: 100%;
-  background: url("images/illustration-2-about-me-mobile.svg") bottom left, url("images/Mask-Group.svg") top right;
+  background: url("images/illustration-2-about-me-mobile.svg") bottom left,
+    url("images/Mask-Group.svg") top right;
   background-repeat: no-repeat;
   padding: 0 12px;
 }
@@ -247,14 +254,9 @@ header {
   padding: 12px;
 }
 
-.resume-btn a {
-  color: #fff;
-  text-decoration: none;
-}
-
 .resume-btn:hover {
   background: #36b37f;
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0px 8px 16px #36b37f3d;
 }
 
 .resume-btn:active {
