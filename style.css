@@ -185,7 +185,7 @@ header {
 }
 
 .see-project a:hover {
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .see-project a:active {
@@ -253,7 +253,7 @@ header {
 }
 
 .resume-btn:hover {
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .resume-btn:active {
