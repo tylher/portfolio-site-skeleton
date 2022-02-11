@@ -168,13 +168,22 @@ header {
   border-radius: 4px;
 }
 
+.see-project a:hover {
+  background: #36b37f;
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.see-project a:active {
+  background: #008552;
+}
+
 .tech {
   grid-column: 1/5;
   display: inline-flex;
   margin: auto 11px;
 }
 
-.tech > span {
+.tech > li {
   padding: 8px 12px;
   margin-right: 8px;
   background: #ebf0ee;
@@ -182,9 +191,11 @@ header {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
+  text-decoration: none;
+  list-style: none;
 }
 
-.tech > span:last-child {
+.tech > li:last-child {
   margin-right: 0;
 }
 
@@ -202,7 +213,7 @@ header {
   left: -11px;
 }
 
-.about-content h1 {
+.about-content h2 {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -240,6 +251,15 @@ header {
 }
 
 .resume-btn a {
-  color: white;
+  color: #fff;
   text-decoration: none;
+}
+
+.resume-btn:hover {
+  background: #36b37f;
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.resume-btn:active {
+  background: #008552;
 }
