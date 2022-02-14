@@ -58,6 +58,7 @@ header {
   font-size: 12px;
   line-height: 16px;
   list-style: none;
+  float: left;
 }
 
 .headline h1 > span {
@@ -194,7 +195,6 @@ header {
 
 .tech {
   grid-column: 1/5;
-  display: inline-flex;
   margin: auto 11px;
 }
 
@@ -225,7 +225,8 @@ header {
 
 .about {
   width: 100%;
-  background: url("images/illustration-2-about-me-mobile.svg") bottom left, url("images/Mask-Group.svg") top right;
+  background: url("images/illustration-2-about-me-mobile.svg") bottom left,
+    url("images/Mask-Group.svg") top right;
   background-repeat: no-repeat;
   padding: 0 12px;
 }
