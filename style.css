@@ -42,7 +42,7 @@ header {
   flex-direction: column;
 }
 
-.headline h1 {
+.headline h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
