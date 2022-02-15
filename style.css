@@ -262,6 +262,12 @@ header {
   background: #008552;
 }
 
+.contact {
+  background-image: url("./images/illustration-contact-form.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
