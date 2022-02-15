@@ -266,6 +266,11 @@ header {
   background-image: url("./images/illustration-contact-form.svg");
   background-repeat: no-repeat;
   background-position: bottom right;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-form {
@@ -321,3 +326,8 @@ textarea {
   border: none;
   color: #ffffff;
 }
+
+/* .m-5 {
+  ma
+}
+ */
