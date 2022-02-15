@@ -225,7 +225,8 @@ header {
 
 .about {
   width: 100%;
-  background: url("images/illustration-2-about-me-mobile.svg") bottom left, url("images/Mask-Group.svg") top right;
+  background: url("images/illustration-2-about-me-mobile.svg") bottom left,
+    url("images/Mask-Group.svg") top right;
   background-repeat: no-repeat;
   padding: 0 12px;
 }
@@ -258,4 +259,19 @@ header {
 
 .resume-btn:active {
   background: #008552;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-intro {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  margin: 24px 0px;
 }
