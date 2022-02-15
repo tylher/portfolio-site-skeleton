@@ -327,7 +327,19 @@ textarea {
   color: #ffffff;
 }
 
-/* .m-5 {
-  ma
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10px;
+  margin-bottom: 147px;
 }
- */
+
+footer p {
+  height: 189px;
+  color: #42526e;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+}
