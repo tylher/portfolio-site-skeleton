@@ -4,6 +4,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -264,6 +265,9 @@ header {
 .contact-form {
   display: flex;
   flex-direction: column;
+  margin: 58px 24px 0 24px;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-intro {
@@ -273,5 +277,41 @@ header {
   line-height: 52px;
   text-align: center;
   color: #172b4d;
-  margin: 24px 0px;
+  margin: 24px 24px;
+}
+
+input {
+  padding: 15px 16px;
+  margin-bottom: 24px;
+  background: #ffffff;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+}
+
+textarea {
+  margin-bottom: 24px;
+  background: #ffffff;
+  border: 1px solid #60c095;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px;
+  text-align: start;
+  width: 100%;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.contact-form > button {
+  padding: 12px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  width: fit-content;
+  background: #36b37f;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
 }
