@@ -235,7 +235,8 @@ footer p {
 
 .about {
   width: 100%;
-  background: url("images/illustration-2-about-me-mobile.svg") bottom left, url("images/Mask-Group.svg") top right;
+  background: url("images/illustration-2-about-me-mobile.svg") bottom left,
+    url("images/Mask-Group.svg") top right;
   background-repeat: no-repeat;
   padding: 0 12px;
 }
@@ -345,6 +346,14 @@ form {
   border-radius: 4px;
   border: none;
   color: #fff;
+}
+
+.contact-form > button:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.contact-form > button:active {
+  background: #008552;
 }
 
 footer {
