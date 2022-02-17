@@ -56,6 +56,10 @@ header {
   color: #172b4d;
 }
 
+header > nav > ul {
+  display: none;
+}
+
 .tech > li {
   padding: 8px 12px;
   background: #ebf0ee;
@@ -443,20 +447,21 @@ footer > .socials {
     justify-content: center;
     align-items: center;
     width: 100%;
+    z-index: 1;
   }
 
-  nav > ul {
-    display: flex;
+  nav > .navigation {
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
     width: 20%;
   }
 
-  header nav > ul li {
+  nav > .navigation li {
     list-style: none;
   }
 
-  header nav > ul li > a {
+  .navigation > li a {
     text-decoration: none;
     color: black;
   }
@@ -468,6 +473,7 @@ footer > .socials {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
   }
 
   .headline > h2 {
@@ -484,6 +490,8 @@ footer > .socials {
     line-height: 32px;
     font-weight: 400;
   }
+
+
   .arrow {
     margin-top: 44px;
     position: static;
@@ -566,6 +574,11 @@ footer > .socials {
     gap: 0 24px;
     align-items: flex-start;
     margin-top: 162px;
+    background: url("images/illustration-1-contact-form-desktop.svg") no-repeat
+        0% 100%,
+      url("images/illustration-2-contact-form-desktop.svg") no-repeat 25% 80%,
+      url("images/contact\ form-illustratoin-3-desktop.svg") no-repeat bottom
+        right;
   }
 
   .contact-intro {
