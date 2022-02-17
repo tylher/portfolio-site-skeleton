@@ -33,6 +33,7 @@ header {
 .headline {
   height: 648px;
   background-image: url("images/header-illsutration-mobile@2x.svg");
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 0 24px;
   text-align: center;
@@ -40,6 +41,10 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.headline > img {
+  display: none;
 }
 
 .headline h2 {
@@ -52,7 +57,6 @@ header {
 
 .tech > li {
   padding: 8px 12px;
-  margin-right: 8px;
   background: #ebf0ee;
   border-radius: 4px;
   font-weight: 600;
@@ -61,7 +65,7 @@ header {
   list-style: none;
 }
 
-.headline h1 > span {
+.headline h2 > span {
   color: #36b37e;
 }
 
@@ -147,15 +151,15 @@ footer p {
 
 .text-box {
   height: 222px;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: repeat(3, auto);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #fff;
   border-radius: 8px;
 }
 
 .text-box h2 {
-  grid-column: 1/5;
   color: #3a4a42;
   margin-top: 16px;
   margin-bottom: 16px;
@@ -169,7 +173,6 @@ footer p {
 }
 
 .see-project {
-  grid-column: 1/5;
   margin-top: 29px;
   margin-bottom: 24px;
 }
@@ -200,9 +203,9 @@ footer p {
 }
 
 .tech {
-  grid-column: 1/5;
   display: inline-flex;
   margin: auto 11px;
+  gap: 8px;
 }
 
 .tech > li:last-child {
@@ -409,4 +412,84 @@ footer {
   align-items: flex-start;
   margin-top: 10px;
   margin-bottom: 147px;
+}
+
+/* styling for desktop view */
+@media screen and (min-width: 990px) {
+  .headline {
+    background: none;
+    position: relative;
+    top: -92px;
+    min-height: 98vh;
+    padding: 0 200px;
+    padding-top: 120px;
+    width: 100%;
+  }
+
+  .headline > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .headline > h2 {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  .headline > p {
+    padding: 0 10px;
+    margin: 0;
+    margin-bottom: 34px;
+    font-size: 1.1em;
+  }
+  .arrow {
+    margin-top: 44px;
+    position: static;
+  }
+
+  .Works {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .Works > div {
+    width: 369px;
+  }
+
+  .text-box h2 {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .tech {
+    margin: auto 32px;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .headline {
+    padding: 0 260px;
+    padding-top: 200px;
+    min-height: 120vh;
+  }
+
+  .arrow {
+    margin-top: 66px;
+    position: static;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .headline {
+    padding: 0 350px;
+    padding-top: 280px;
+    min-height: 160vh;
+  }
+
+  .arrow {
+    margin-top: 84px;
+    position: static;
+  }
 }
