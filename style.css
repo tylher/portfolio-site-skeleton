@@ -10,7 +10,6 @@
 
 body {
   font-family: "Inter", sans-serif;
-  
 }
 
 .container {
@@ -414,6 +413,10 @@ footer {
   margin-bottom: 147px;
 }
 
+footer > .socials {
+  display: none;
+}
+
 /* styling for desktop view */
 @media screen and (min-width: 992px) {
   .headline {
@@ -555,6 +558,62 @@ footer {
     background: url("images/illustration-about-me-2-desktop.svg") bottom left;
     background-repeat: no-repeat;
     margin-bottom: 59px;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0 24px;
+    align-items: flex-start;
+    margin-top: 162px;
+  }
+
+  .contact-intro {
+    width: 463px;
+    margin: 0;
+    font-size: 30px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #172b4d;
+    text-align: start;
+    height: 276px;
+  }
+
+  form {
+    width: 684px;
+    padding: 0;
+  }
+
+  .contact-form {
+    margin: 0;
+  }
+
+  .contact-form > button {
+    letter-spacing: 0.03em;
+    align-self: start;
+    margin-bottom: 225px;
+  }
+
+  .contact > ul {
+    display: none;
+  }
+
+  footer {
+    margin: 0;
+  }
+
+  footer > p {
+    display: none;
+  }
+
+  footer > .socials {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 26px;
+    border-top: 1px solid #dfe1e6;
+    width: 100%;
   }
 }
 
