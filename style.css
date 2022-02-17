@@ -213,6 +213,18 @@ footer p {
   gap: 8px;
 }
 
+.about-card > ul li {
+  list-style: none;
+  padding: 12px;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #36b37e;
+}
+
 .tech > li:last-child {
   margin-right: 0;
 }
@@ -310,18 +322,6 @@ footer p {
   align-items: center;
   justify-content: center;
   margin-top: 40px;
-}
-
-.about-card > ul li {
-  list-style: none;
-  padding: 12px;
-  text-align: center;
-  background: #ffffff;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #36b37e;
 }
 
 .contact {
@@ -482,6 +482,11 @@ footer > .socials {
     font-weight: 700;
     color: #172b4d;
   }
+
+   footer > p {
+    display: none;
+  }
+
   .headline > p {
     padding: 0 10px;
     margin: 0;
@@ -490,7 +495,6 @@ footer > .socials {
     line-height: 32px;
     font-weight: 400;
   }
-
 
   .arrow {
     margin-top: 44px;
@@ -523,6 +527,7 @@ footer > .socials {
     font-family: "Poppins", sans-serif;
     color: #172b4d;
   }
+
   .tech {
     margin: auto 32px;
     align-items: center;
@@ -531,8 +536,7 @@ footer > .socials {
   .about {
     margin-top: 89px;
     padding-top: 103px;
-    background: url("images/illustration-about\ me-1-desktop.svg") top right
-      no-repeat;
+    background: url("images/illustration-about\ me-1-desktop.svg") top right no-repeat;
   }
 
   .cards {
@@ -548,11 +552,13 @@ footer > .socials {
   .about-content {
     margin: 0 260px;
   }
+
   .about-content > h2 {
     font-size: 40px;
     line-height: 52px;
     color: #172b4d;
   }
+
   .about-content > p {
     margin: 24px 0;
     font-size: 20px;
@@ -574,11 +580,7 @@ footer > .socials {
     gap: 0 24px;
     align-items: flex-start;
     margin-top: 162px;
-    background: url("images/illustration-1-contact-form-desktop.svg") no-repeat
-        0% 100%,
-      url("images/illustration-2-contact-form-desktop.svg") no-repeat 25% 80%,
-      url("images/contact\ form-illustratoin-3-desktop.svg") no-repeat bottom
-        right;
+    background: url("images/illustration-1-contact-form-desktop.svg") no-repeat 0% 100%, url("images/illustration-2-contact-form-desktop.svg") no-repeat 25% 80%, url("images/contact\ form-illustratoin-3-desktop.svg") no-repeat bottom right;
   }
 
   .contact-intro {
@@ -614,10 +616,6 @@ footer > .socials {
 
   footer {
     margin: 0;
-  }
-
-  footer > p {
-    display: none;
   }
 
   footer > .socials {
