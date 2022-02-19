@@ -54,6 +54,18 @@ header {
   line-height: 52px;
   margin-top: 64px;
   color: #172b4d;
+  animation: slidein 0.5s ease;
+  position: relative;
+}
+
+@keyframes slidein {
+  from {
+    right: 100%;
+  }
+
+  to {
+    right: 0%;
+  }
 }
 
 header > nav > ul {
@@ -70,8 +82,24 @@ header > nav > ul {
   list-style: none;
 }
 
-.headline h2 > span {
+.headline > span {
   color: #36b37e;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin-top: 0;
+  position: relative;
+  animation: slide-right 0.5s ease;
+}
+
+@keyframes slide-right {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0;
+  }
 }
 
 footer p {
@@ -94,16 +122,25 @@ footer p {
   padding: 0;
   display: flex;
   align-items: center;
-}
-
-.socials li {
-  list-style: none;
+  justify-content: center;
+  z-index: 100;
 }
 
 .social {
-  width: auto;
+  list-style: none;
   margin-right: 20px;
-  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform;
+}
+
+.social:hover {
+  width: 40px;
+  height: 40px;
+  border: 3px #36b37e solid;
+  border-radius: 50%;
+  transform: translateY(10%);
 }
 
 .social:last-child {
@@ -148,6 +185,34 @@ footer p {
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
+}
+
+.Works > div:nth-child(odd) {
+  animation: worksleft ease-in-out 2s 5;
+}
+
+@keyframes worksleft {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+.Works > div:nth-child(even) {
+  animation: worksright ease-in-out 2s 5;
+}
+
+@keyframes worksright {
+  from {
+    right: 100%;
+  }
+
+  to {
+    right: 0;
+  }
 }
 
 .image-box {
@@ -335,6 +400,10 @@ footer p {
   align-items: center;
 }
 
+.contact-container>ul{
+  justify-content: center;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -353,6 +422,7 @@ footer p {
   color: #172b4d;
   margin: 0 24px;
 }
+
 
 input {
   padding: 15px 16px;
@@ -513,8 +583,11 @@ footer > .socials {
   }
 
   .Works {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 32px 24px;
+    display: flex;
+    gap: 32px 24px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 
   .Works > div {
@@ -536,7 +609,8 @@ footer > .socials {
   .about {
     margin-top: 89px;
     padding-top: 103px;
-    background: url("images/illustration-about\ me-1-desktop.svg") top right no-repeat;
+    background: url("images/illustration-about\ me-1-desktop.svg") top right
+      no-repeat;
   }
 
   .cards {
@@ -575,16 +649,24 @@ footer > .socials {
   }
 
   .contact {
+    margin-top: 162px;
+    background: url("images/illustration-1-contact-form-desktop.svg") no-repeat
+        0% 100%,
+      url("images/illustration-2-contact-form-desktop.svg") no-repeat 25% 80%,
+      url("images/contact\ form-illustratoin-3-desktop.svg") no-repeat bottom
+        right;
+  }
+
+  .contact-container {
+    width: 80vw;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 40% 60%;
     gap: 0 24px;
     align-items: flex-start;
-    margin-top: 162px;
-    background: url("images/illustration-1-contact-form-desktop.svg") no-repeat 0% 100%, url("images/illustration-2-contact-form-desktop.svg") no-repeat 25% 80%, url("images/contact\ form-illustratoin-3-desktop.svg") no-repeat bottom right;
   }
 
   .contact-intro {
-    width: 463px;
+    /* width: 463px; */
     margin: 0;
     font-size: 30px;
     line-height: 52px;
@@ -596,7 +678,7 @@ footer > .socials {
   }
 
   form {
-    width: 684px;
+    /* width: 684px; */
     padding: 0;
   }
 
@@ -610,7 +692,7 @@ footer > .socials {
     margin-bottom: 225px;
   }
 
-  .contact > ul {
+  .contact-container > ul {
     display: none;
   }
 
@@ -647,11 +729,6 @@ footer > .socials {
     line-height: 36px;
   }
 
-  .Works {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 32px 24px;
-  }
-
   .arrow {
     margin-top: 66px;
     position: static;
@@ -682,5 +759,11 @@ footer > .socials {
   .arrow {
     margin-top: 84px;
     position: static;
+  }
+
+  .Works {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px 24px;
   }
 }
