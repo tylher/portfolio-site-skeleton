@@ -421,7 +421,7 @@ footer p {
   transition: transform 0.2s, border 0.2s;
 }
 
-.contact-form > input:hover{
+.contact-form > input:hover {
   border: #36b37f solid 3px;
 }
 
@@ -429,7 +429,7 @@ footer p {
   transition: transform 0.5s, border 0.5s;
 }
 
-.contact-form > textarea:hover{
+.contact-form > textarea:hover {
   border: #36b37f solid 3px;
 }
 
@@ -559,6 +559,13 @@ footer > .socials {
   .navigation > li a {
     text-decoration: none;
     color: black;
+    transition: border 0.2s, color , padding 0.2s;
+  }
+
+  .navigation > li a:hover {
+    border: #36b37f solid 1px;
+    color: #36b37f;
+    padding: 2px;
   }
 
   .headline > img {
@@ -649,7 +656,7 @@ footer > .socials {
     transition: transform 1s;
   }
 
-  .about-card:hover{
+  .about-card:hover {
     transform: scale(1.2);
   }
 
