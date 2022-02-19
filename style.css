@@ -260,16 +260,16 @@ footer p {
   transition: all 0.5s;
 }
 
+.resume-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .see-project a:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   background-color: #fff;
   color: #36b37f;
   border: 1px solid #36b37f;
-}
-
-.resume-btn a {
-  color: #fff;
-  text-decoration: none;
 }
 
 .see-project a:active {
@@ -417,38 +417,6 @@ footer p {
   margin-bottom: 20px;
 }
 
-.contact-form > input {
-  transition: transform 0.2s, border 0.2s;
-}
-
-.contact-form > input:hover {
-  border: #36b37f solid 3px;
-}
-
-.contact-form > textarea {
-  transition: transform 0.5s, border 0.5s;
-}
-
-.contact-form > textarea:hover {
-  border: #36b37f solid 3px;
-}
-
-.contact-form > button:hover {
-  background: #fff;
-  border-radius: 4px;
-  border: 1px solid #36b37f;
-  color: #36b37f;
-}
-.contact-intro {
-  font-weight: 700;
-  font-style: normal;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  color: #172b4d;
-  margin: 0 24px;
-}
-
 input {
   padding: 15px 16px;
   margin-bottom: 24px;
@@ -461,6 +429,14 @@ input {
   color: #6b778c;
   font-weight: 400;
   width: 100%;
+}
+
+.contact-form > input {
+  transition: transform 0.2s, border 0.2s;
+}
+
+.contact-form > input:hover {
+  border: #36b37f solid 3px;
 }
 
 textarea {
@@ -479,6 +455,32 @@ textarea {
   color: #091e42;
 }
 
+.contact-form > textarea {
+  transition: transform 0.5s, border 0.5s;
+}
+
+.contact-form > textarea:hover {
+  border: #36b37f solid 3px;
+}
+
+.contact-form > button:hover {
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #36b37f;
+  color: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.contact-intro {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  margin: 0 24px;
+}
+
 form {
   width: 100%;
   padding: 0 24px;
@@ -494,10 +496,6 @@ form {
   border-radius: 4px;
   border: none;
   color: #fff;
-}
-
-.contact-form > button:hover {
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .contact-form > button:active {
@@ -641,8 +639,7 @@ footer > .socials {
   .about {
     margin-top: 89px;
     padding-top: 103px;
-    background: url("images/illustration-about\ me-1-desktop.svg") top right
-      no-repeat;
+    background: url("images/illustration-about\ me-1-desktop.svg") top right no-repeat;
   }
 
   .cards {
@@ -687,11 +684,7 @@ footer > .socials {
 
   .contact {
     margin-top: 162px;
-    background: url("images/illustration-1-contact-form-desktop.svg") no-repeat
-        0% 100%,
-      url("images/illustration-2-contact-form-desktop.svg") no-repeat 25% 80%,
-      url("images/contact\ form-illustratoin-3-desktop.svg") no-repeat bottom
-        right;
+    background: url("images/illustration-1-contact-form-desktop.svg") no-repeat 0% 100%, url("images/illustration-2-contact-form-desktop.svg") no-repeat 25% 80%, url("images/contact\ form-illustratoin-3-desktop.svg") no-repeat bottom right;
   }
 
   .contact-container {
