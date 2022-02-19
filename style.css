@@ -417,6 +417,12 @@ footer p {
   margin-bottom: 20px;
 }
 
+.contact-form > button:hover {
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #36b37f;
+  color: #36b37f;
+}
 .contact-intro {
   font-weight: 700;
   font-style: normal;
