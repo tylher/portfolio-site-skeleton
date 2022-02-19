@@ -417,6 +417,22 @@ footer p {
   margin-bottom: 20px;
 }
 
+.contact-form > input {
+  transition: transform 0.2s, border 0.2s;
+}
+
+.contact-form > input:hover{
+  border: #36b37f solid 3px;
+}
+
+.contact-form > textarea {
+  transition: transform 0.5s, border 0.5s;
+}
+
+.contact-form > textarea:hover{
+  border: #36b37f solid 3px;
+}
+
 .contact-form > button:hover {
   background: #fff;
   border-radius: 4px;
@@ -630,6 +646,11 @@ footer > .socials {
 
   .about-card {
     width: 369px;
+    transition: transform 1s;
+  }
+
+  .about-card:hover{
+    transform: scale(1.2);
   }
 
   .about-content {
@@ -675,7 +696,6 @@ footer > .socials {
   }
 
   .contact-intro {
-    /* width: 463px; */
     margin: 0;
     font-size: 30px;
     line-height: 52px;
@@ -687,7 +707,6 @@ footer > .socials {
   }
 
   form {
-    /* width: 684px; */
     padding: 0;
   }
 
