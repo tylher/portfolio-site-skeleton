@@ -463,6 +463,18 @@ textarea {
   border: #36b37f solid 3px;
 }
 
+.contact-form > button {
+  padding: 12px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  width: fit-content;
+  background: #36b37f;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+}
+
 .contact-form > button:hover {
   background: #fff;
   border-radius: 4px;
@@ -484,18 +496,6 @@ textarea {
 form {
   width: 100%;
   padding: 0 24px;
-}
-
-.contact-form > button {
-  padding: 12px;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  width: fit-content;
-  background: #36b37f;
-  border-radius: 4px;
-  border: none;
-  color: #fff;
 }
 
 .contact-form > button:active {
@@ -557,7 +557,7 @@ footer > .socials {
   .navigation > li a {
     text-decoration: none;
     color: black;
-    transition: border 0.2s, color , padding 0.2s;
+    transition: border 0.2s, color, padding 0.2s;
   }
 
   .navigation > li a:hover {
