@@ -257,15 +257,19 @@ footer p {
   color: #fff;
   display: inline-block;
   border-radius: 4px;
+  transition: all 0.5s;
+}
+
+.see-project a:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  background-color: #fff;
+  color: #36b37f;
+  border: 1px solid #36b37f;
 }
 
 .resume-btn a {
   color: #fff;
   text-decoration: none;
-}
-
-.see-project a:hover {
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .see-project a:active {
@@ -400,7 +404,7 @@ footer p {
   align-items: center;
 }
 
-.contact-container>ul{
+.contact-container > ul {
   justify-content: center;
 }
 
@@ -422,7 +426,6 @@ footer p {
   color: #172b4d;
   margin: 0 24px;
 }
-
 
 input {
   padding: 15px 16px;
