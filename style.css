@@ -35,6 +35,7 @@ body {
 
 .mobile-menu {
   display: none;
+  margin: 62px 28px auto 38px;
 }
 
 .logo {
@@ -84,8 +85,8 @@ body {
   display: flex;
   flex-direction: column;
   background: #fff;
-  margin-left: 28px;
   height: 100vh;
+  clear: right;
 }
 
 .exit-nav {
@@ -557,37 +558,50 @@ footer > .socials {
     padding-top: 120px;
     width: 100%;
   }
-
-  .mobile-header-container {
+  
+  .exit-nav{
     display: none;
+  }
+
+  .mobile-header-container , .header-not-visible {
+    display: none !important;
   }
 
   header {
     margin-top: 0;
   }
+  
+  .mobile-nav{
+    display: none;
+  }
 
   header > nav {
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height:auto; 
     z-index: 1;
   }
 
   nav .navigation {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    height: auto;
+    margin-left: 0;
     width: 20%;
   }
 
   nav > .navigation li {
     list-style: none;
+    margin-bottom: 0;
   }
 
   .navigation > li a {
     text-decoration: none;
+    font-size: 18px;
     color: black;
     transition: border 0.2s, color, padding 0.2s;
   }
