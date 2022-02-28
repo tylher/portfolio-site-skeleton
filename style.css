@@ -45,7 +45,7 @@ body {
   height: 90vh;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   z-index: 10;
 }
 
@@ -104,6 +104,24 @@ body {
 
 .mobile-nav li {
   margin-bottom: 40px;
+}
+
+.see-project a {
+  font-weight: 500;
+  padding: 12px;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+  background-color: #1b5a40;
+  color: #fff;
+  display: inline-block;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+
+.resume-btn a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .mobile-nav li > a {
@@ -286,24 +304,6 @@ footer p {
 .see-project {
   margin-top: 29px;
   margin-bottom: 24px;
-}
-
-.see-project a {
-  font-weight: 500;
-  padding: 12px;
-  font-size: 17px;
-  line-height: 24px;
-  text-decoration: none;
-  background-color: #1b5a40;
-  color: #fff;
-  display: inline-block;
-  border-radius: 4px;
-  transition: all 0.5s;
-}
-
-.resume-btn a {
-  color: #fff;
-  text-decoration: none;
 }
 
 .see-project a:hover {
@@ -581,7 +581,7 @@ footer > .socials {
   }
 
   header > .mobile-menu {
-    display: flex !important ;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -653,10 +653,6 @@ footer > .socials {
     font-weight: 400;
   }
 
-  .headline > h2 {
-    margin: 0;
-  }
-
   .arrow {
     margin-top: 44px;
     position: static;
@@ -700,8 +696,7 @@ footer > .socials {
   .about {
     margin-top: 89px;
     padding-top: 103px;
-    background: url("images/illustration-about\ me-1-desktop.svg") top right
-      no-repeat;
+    background: url("images/illustration-about\ me-1-desktop.svg") top right no-repeat;
   }
 
   .cards {
@@ -745,11 +740,11 @@ footer > .socials {
   }
 
   .contact {
-    background: url("images/illustration-1-contact-form-desktop.svg") no-repeat
-        0% 100%,
+    background:
+      url("images/illustration-1-contact-form-desktop.svg") no-repeat 0% 100%,
       url("images/illustration-2-contact-form-desktop.svg") no-repeat 25% 80%,
       url("images/contact\ form-illustratoin-3-desktop.svg") no-repeat bottom
-        right;
+      right;
   }
 
   .contact-container {
