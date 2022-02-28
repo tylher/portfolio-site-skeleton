@@ -8,6 +8,14 @@
   font-family: "Inter", sans-serif;
 }
 
+li {
+  list-style: none;
+}
+
+li > a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
@@ -17,12 +25,16 @@ body {
   flex-direction: column;
 }
 
-header {
+.mobile-header-container {
   margin-top: 44px;
   display: flex;
   justify-content: space-between;
   padding: 10px 24px;
   align-items: center;
+}
+
+.exit-nav {
+  display: none;
 }
 
 .logo {
@@ -68,8 +80,24 @@ header {
   }
 }
 
-header > nav > ul {
-  display: none;
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  margin-left: 28px;
+  height: 100vh;
+}
+
+.mobile-nav li {
+  margin-bottom: 40px;
+}
+
+.mobile-nav li > a {
+  color: #3a4a42;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  
 }
 
 .tech > li {
@@ -526,8 +554,7 @@ footer > .socials {
     width: 100%;
   }
 
-  header > h1,
-  nav > a {
+  .mobile-header-container {
     display: none;
   }
 
@@ -543,8 +570,9 @@ footer > .socials {
     z-index: 1;
   }
 
-  nav > .navigation {
-    display: inline-flex;
+  nav .navigation {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 20%;
@@ -639,7 +667,8 @@ footer > .socials {
   .about {
     margin-top: 89px;
     padding-top: 103px;
-    background: url("images/illustration-about\ me-1-desktop.svg") top right no-repeat;
+    background: url("images/illustration-about\ me-1-desktop.svg") top right
+      no-repeat;
   }
 
   .cards {
@@ -683,8 +712,11 @@ footer > .socials {
   }
 
   .contact {
-    margin-top: 162px;
-    background: url("images/illustration-1-contact-form-desktop.svg") no-repeat 0% 100%, url("images/illustration-2-contact-form-desktop.svg") no-repeat 25% 80%, url("images/contact\ form-illustratoin-3-desktop.svg") no-repeat bottom right;
+    background: url("images/illustration-1-contact-form-desktop.svg") no-repeat
+        0% 100%,
+      url("images/illustration-2-contact-form-desktop.svg") no-repeat 25% 80%,
+      url("images/contact\ form-illustratoin-3-desktop.svg") no-repeat bottom
+        right;
   }
 
   .contact-container {
