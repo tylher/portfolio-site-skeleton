@@ -33,7 +33,7 @@ body {
   align-items: center;
 }
 
-.exit-nav {
+.mobile-menu {
   display: none;
 }
 
@@ -86,6 +86,10 @@ body {
   background: #fff;
   margin-left: 28px;
   height: 100vh;
+}
+
+.exit-nav {
+  float: right;
 }
 
 .mobile-nav li {
