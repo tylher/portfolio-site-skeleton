@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,12 +8,13 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="container">
       <header>
         <div class="mobile-header-container header-not-visible">
           <h1 class="logo">Welcome</h1>
-         <a href="#" onclick="displayNav()"><img src="images/menu_icon.png" alt="menu"/></a>
+          <a href="#" onclick="displayNav()"><img src="images/menu_icon.png" alt="menu" /></a>
         </div>
         <nav class="mobile-menu">
           <a href="#" class="exit-nav" onclick="closeNav()"><img src="images/exit-Icon.svg" alt=""></a>
@@ -107,7 +109,7 @@
                 <li>html</li>
                 <li>Javascript</li>
               </ul>
-              <div class="see-project"><a href="#">See Project</a></div>
+              <div class="see-project"><a href="">See Project</a></div>
             </div>
           </div>
           <div>
@@ -199,53 +201,35 @@
 
           <form action="https://formspree.io/f/xnqwdpzv" method="POST">
             <div class="contact-form">
-              <input
-                type="text"
-                name="full-name"
-                id="name"
-                placeholder="Full name"
-                maxlength="30"
-                required
-              />
-              <input
-                type="email"
-                name="Email"
-                id="Email"
-                placeholder="Email address"
-                required
-              />
-              <textarea
-                name="text-area"
-                id="text-area"
-                maxlength="500"
-                placeholder="Enter text here"
-                required
-              ></textarea>
+              <input type="text" name="full-name" id="name" placeholder="Full name" maxlength="30" required />
+              <input type="email" name="Email" id="Email" placeholder="Email address" required />
+              <textarea name="text-area" id="text-area" maxlength="500" placeholder="Enter text here"
+                required></textarea>
               <button type="submit" class="submit-btn">Get in touch</button>
             </div>
           </form>
-         <ul class="socials m-5">
-          <li class="social">
-            <a href="google.com"><img src="images/angellist.png" alt="angellist icon" /></a>
-          </li>
-          <li class="social">
-            <a href="#"><img src="images/github.png" alt="github icon" /></a>
-          </li>
-          <li class="social">
-            <a href="#"><img src="images/Linkedin-icon.png" alt="linkedin icon" /></a>
-          </li>
-          <li class="social">
-            <a href="#"><img src="images/twitter.png" alt="twitter icon" /></a>
-          </li>
-          <li class="social">
-            <a href="#"><img src="images/medium.png" alt="medium icon" /></a>
-          </li>
-        </ul>
+          <ul class="socials m-5">
+            <li class="social">
+              <a href="google.com"><img src="images/angellist.png" alt="angellist icon" /></a>
+            </li>
+            <li class="social">
+              <a href="#"><img src="images/github.png" alt="github icon" /></a>
+            </li>
+            <li class="social">
+              <a href="#"><img src="images/Linkedin-icon.png" alt="linkedin icon" /></a>
+            </li>
+            <li class="social">
+              <a href="#"><img src="images/twitter.png" alt="twitter icon" /></a>
+            </li>
+            <li class="social">
+              <a href="#"><img src="images/medium.png" alt="medium icon" /></a>
+            </li>
+          </ul>
         </div>
       </section>
 
       <footer>
-         <ul class="socials m-5">
+        <ul class="socials m-5">
           <li class="social">
             <a href="google.com"><img src="images/angellist.png" alt="angellist icon" /></a>
           </li>
@@ -266,10 +250,6 @@
       </footer>
     </div>
     <section class="modal">
-      <div class="modal-image-box">
-        <a href=""><img class="cancel-icon" src="images/Icon-Cancel.svg" alt="" /></a>
-        <img class="project-image" src="images/pexels-thisisengineering-3861969.jpg" alt="" />
-      </div>
       <div class="modal-image-box-desktop">
         <a href="" class="cancel-icon-desktop"><img src="images/Icon-Cancel-desktop.svg" alt=""></a>
         <img class="project-image-desktop" src="images/Snapshoot-Portfolio.svg" alt="" />
@@ -281,6 +261,7 @@
           <li>css</li>
           <li>JavScript</li>
         </ul>
+        <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
@@ -289,12 +270,14 @@
           industry's standard dummy text ever since the 1500s, when an unknown
           printer took a galley of type and scrambled it 1960s with the relea
         </p>
+
         <div class="btn-group">
           <a href="">see live <img src="images/Icon-GitHub.svg" alt="" /></a>
           <a href="">see source <img src="images/Icon-Export.png" alt="" /></a>
         </div>
       </div>
     </section>
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
   </body>
+
 </html>

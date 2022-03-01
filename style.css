@@ -603,20 +603,17 @@ footer > .socials {
   gap: 12px;
 }
 
-.modal-image-box {
-  position: relative;
-}
-
 .modal-image-box-desktop {
-  display: none;
+  position: relative;
+  max-width: 100%;
 }
 
-.project-image {
-  max-width: 100%;
+.project-image-desktop {
+  width: 100%;
   border-radius: 8px;
 }
 
-.cancel-icon {
+.cancel-icon-desktop {
   position: absolute;
   top: 16px;
   right: 16px;
@@ -907,11 +904,8 @@ footer > .socials {
     grid-column: 1/span 2;
   }
 
-  .modal-image-box {
-    display: none;
-  }
-
   .cancel-icon-desktop {
+    position: static;
     display: inline-block;
     background: #ebecf0;
     padding: 8px;
