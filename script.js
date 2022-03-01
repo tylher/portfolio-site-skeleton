@@ -15,3 +15,4 @@ const closeNav = () => {
   body.style.height = 'auto';
   body.style.overflowY = 'scroll';
 };
+
