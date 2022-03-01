@@ -10,5 +10,6 @@ function closeNav() {
   document.body.getElementsByClassName('header-not-visible')[0].style.display = 'flex';
   document.body.getElementsByClassName('mobile-menu')[0].style.display = 'none';
   body.style.height = 'auto';
+
   body.style.overflowY = 'scroll';
 }
