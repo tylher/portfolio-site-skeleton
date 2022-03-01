@@ -10,20 +10,23 @@
   <body>
     <div class="container">
       <header>
-        <h1 class="logo">Welcome</h1>
-        <nav>
-          <a href="#"><img src="images/menu_icon.png" alt="menu" /></a>
-          <ul class="navigation">
-            <li><a href="#Portfolio">Portfolio</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Contact">Contact</a></li>
+        <div class="mobile-header-container header-not-visible">
+          <h1 class="logo">Welcome</h1>
+         <a href="#" onclick="displayNav()"><img src="images/menu_icon.png" alt="menu"/></a>
+        </div>
+        <nav class="mobile-menu">
+          <a href="#" class="exit-nav" onclick="closeNav()"><img src="images/exit-Icon.svg" alt=""></a>
+          <ul class="navigation mobile-nav">
+            <li><a onclick="closeNav()" href="#Portfolio">Portfolio</a></li>
+            <li><a onclick="closeNav() "href="#About">About</a></li>
+            <li><a onclick="closeNav()" href="#Contact">Contact</a></li>
           </ul>
         </nav>
       </header>
 
       <section class="headline">
         <img src="images/Header-llustration-desktop.svg" alt="" />
-        <h2>Hey there. I’m Mariane</h2>
+        <h2>Hey there. I’m Damola</h2>
         <span>I’m a software developer</span>
         <p>
           I can help you build a product , feature or website Look through some
@@ -262,5 +265,6 @@
         <p>tylher123@gmail.com</p>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
