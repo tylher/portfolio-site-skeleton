@@ -74,6 +74,8 @@ form.addEventListener("submit", (e) => {
   if (reg.test(email.value.trim()) == false) {
     e.preventDefault();
     errorMsg.textContent = "Your email should be in lowercase";
+    errorMsg.style.display = "inline";
+    
   }
 });
 
