@@ -18,6 +18,13 @@ li > a {
 
 body {
   font-family: "Inter", sans-serif;
+  position: relative;
+}
+
+.blur {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-color: rgba(193, 199, 208, 1);
 }
 
 .container {
@@ -122,6 +129,21 @@ body {
 .resume-btn a {
   color: #fff;
   text-decoration: none;
+}
+
+.btn-group a {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 12px 16px;
+  background: #36b37f;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
 }
 
 .mobile-nav li > a {
@@ -236,10 +258,12 @@ footer p {
 .Works {
   display: grid;
   grid-gap: 24px;
+  align-items: center;
+  justify-content: center;
 }
 
 .Works > div {
-  width: 327px;
+  max-width: 327px;
   position: relative;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
@@ -321,6 +345,18 @@ footer p {
   display: inline-flex;
   margin: auto 11px;
   gap: 8px;
+}
+
+.modal-tech li {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+  list-style: none;
+  background: #ebf0ee;
+  border-radius: 4px;
+  padding: 8px 12px;
 }
 
 .about-card > ul li {
@@ -504,7 +540,7 @@ textarea {
   border: #36b37f solid 3px;
 }
 
-.contact-form > button {
+.contact-form button {
   padding: 12px;
   font-weight: 500;
   font-size: 17px;
@@ -516,7 +552,7 @@ textarea {
   color: #fff;
 }
 
-.contact-form > button:hover {
+.contact-form button:hover {
   background: #fff;
   border-radius: 4px;
   border: 1px solid #1b5a40;
@@ -553,6 +589,77 @@ footer {
 
 footer > .socials {
   display: none;
+}
+
+.modal-tech {
+  display: flex;
+  gap: 8px;
+}
+
+.modal-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal {
+  display: flex;
+  padding: 16px 16px 20px;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 92vw;
+  max-height: 600px;
+  overflow-y: scroll;
+  background-color: #fff;
+}
+
+.modal-wrapper {
+  display: none;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-image-box-desktop {
+  position: relative;
+  max-width: 100%;
+}
+
+.project-image-desktop {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.cancel-icon-desktop {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.modal h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.modal p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin-bottom: 4px;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
 }
 
 /* styling for desktop view */
@@ -677,7 +784,7 @@ footer > .socials {
   }
 
   .Works > div {
-    width: 369px;
+    max-width: 369px;
   }
 
   .text-box h2 {
@@ -773,10 +880,13 @@ footer > .socials {
     margin: 0;
   }
 
-  .contact-form > button {
+  .submit-btn-holder {
+    width: 100%;
+  }
+
+  .contact-form button {
     letter-spacing: 0.03em;
     align-self: start;
-    margin-bottom: 225px;
   }
 
   .contact-container > ul {
@@ -784,7 +894,8 @@ footer > .socials {
   }
 
   footer {
-    margin: 0;
+    margin-top: 225px;
+    margin-bottom: 0;
   }
 
   footer > .socials {
@@ -794,6 +905,63 @@ footer > .socials {
     padding-bottom: 26px;
     border-top: 1px solid #dfe1e6;
     width: 100%;
+  }
+
+  .modal {
+    padding: 24px;
+    max-width: 92vw;
+    height: 80vh;
+  }
+
+  .modal h2 {
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    order: -2;
+  }
+
+  .modal p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+    grid-column: 1/span 2;
+  }
+
+  .modal-tech {
+    grid-column: 1/span 2;
+  }
+
+  .cancel-icon-desktop {
+    position: static;
+    display: inline-block;
+    background: #ebecf0;
+    padding: 8px;
+    border-radius: 8px;
+    float: right;
+    margin-bottom: 14px;
+  }
+
+  .modal-text-box {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-gap: 24px 0;
+  }
+
+  .modal-image-box-desktop {
+    display: block;
+    max-width: 100%;
+  }
+
+  .project-image-desktop {
+    margin: auto;
+    width: 100%;
+    clear: both;
+  }
+
+  .btn-group {
+    order: -1;
+    justify-self: end;
+    align-self: start;
   }
 }
 
@@ -819,6 +987,10 @@ footer > .socials {
   .arrow {
     margin-top: 66px;
     position: static;
+  }
+
+  .modal {
+    max-width: 86vw;
   }
 }
 
@@ -852,5 +1024,9 @@ footer > .socials {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 32px 24px;
+  }
+
+  .modal {
+    max-width: 70vw;
   }
 }
