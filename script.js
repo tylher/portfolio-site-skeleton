@@ -64,4 +64,19 @@ goBack.addEventListener('click', () => {
   document.querySelector('.modal-wrapper').style.display = 'none';
 });
 
+const email = document.getElementById("Email");
+const form = document.querySelector(".contact-us");
+const errorMsg = document.querySelector(".error-msg");
+
+form.addEventListener("submit", (e) => {
+  const reg1 = /[a-z]/g;
+  const reg2 = /[A-Z]/g;
+  if (reg1.test(email.value.trim())&& !reg2.test(email.value.trim()) == false) {
+    e.preventDefault();
+    errorMsg.textContent = "Your email should be in lowercase";
+    errorMsg.style.display = "inline";
+    email.value = email.value.toLowerCase();
+  }
+});
+
 
