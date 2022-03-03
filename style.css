@@ -540,7 +540,7 @@ textarea {
   border: #36b37f solid 3px;
 }
 
-.contact-form > button {
+.contact-form button {
   padding: 12px;
   font-weight: 500;
   font-size: 17px;
@@ -552,7 +552,7 @@ textarea {
   color: #fff;
 }
 
-.contact-form > button:hover {
+.contact-form button:hover {
   background: #fff;
   border-radius: 4px;
   border: 1px solid #1b5a40;
@@ -880,10 +880,13 @@ footer > .socials {
     margin: 0;
   }
 
-  .contact-form > button {
+  .submit-btn-holder {
+    width: 100%;
+  }
+
+  .contact-form button {
     letter-spacing: 0.03em;
     align-self: start;
-    margin-bottom: 225px;
   }
 
   .contact-container > ul {
@@ -891,7 +894,8 @@ footer > .socials {
   }
 
   footer {
-    margin: 0;
+    margin-top: 225px;
+    margin-bottom: 0;
   }
 
   footer > .socials {
