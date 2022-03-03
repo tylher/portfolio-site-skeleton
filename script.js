@@ -64,4 +64,17 @@ goBack.addEventListener('click', () => {
   document.querySelector('.modal-wrapper').style.display = 'none';
 });
 
+const email = document.getElementById("Email");
+const form = document.querySelector(".contact-us");
+const errorMsg = document.querySelector(".error-msg");
+
+form.addEventListener("submit", (e) => {
+  const reg = /^[a-z]+$/g;
+  console.log(email.value);
+  if (reg.test(email.value.trim()) == false) {
+    e.preventDefault();
+    errorMsg.textContent = "Your email should be in lowercase";
+  }
+});
+
 
