@@ -2,9 +2,9 @@ import { data } from './data.js';
 
 const body = document.querySelector('body');
 const seeProject = document.querySelectorAll('.see-project');
-const goBack = document.querySelector('cancel-icon-desktop');
+const goBack = document.querySelector('.cancel-icon-desktop');
 const projectTitle = document.querySelector('.modal-text-box h2');
-const projectDescription = document.querySelector('.modal-text-box ');
+const projectDescription = document.querySelector('.modal-text-box');
 const projectImage = document.querySelector('.project-image-desktop');
 const tecnologiesArr = document.querySelector('.modal-tech');
 const source = document.querySelector('.seeSource');
@@ -69,8 +69,8 @@ const form = document.querySelector(".contact-us");
 const errorMsg = document.querySelector(".error-msg");
 
 form.addEventListener("submit", (e) => {
-  const reg1 = [a-z]/g;
-  const reg2 = [A-Z]/g;
+  const reg1 = /[a-z]/g;
+  const reg2 = /[A-Z]/g;
   if (reg1.test(email.nodeValue.trim())&& !reg2.test(email.value.trim()) == false) {
     e.preventDefault();
     errorMsg.textContent = "Your email should be in lowercase";
