@@ -270,34 +270,6 @@ footer p {
   border-radius: 8px;
 }
 
-.Works > div:nth-child(odd) {
-  animation: worksleft ease-in-out 2s 5;
-}
-
-@keyframes worksleft {
-  from {
-    left: 100%;
-  }
-
-  to {
-    left: 0;
-  }
-}
-
-.Works > div:nth-child(even) {
-  animation: worksright ease-in-out 2s 5;
-}
-
-@keyframes worksright {
-  from {
-    right: 100%;
-  }
-
-  to {
-    right: 0;
-  }
-}
-
 .image-box {
   height: 252px;
 }
@@ -875,6 +847,7 @@ footer > .socials {
       url("images/illustration-2-contact-form-desktop.svg") no-repeat 25% 80%,
       url("images/contact\ form-illustratoin-3-desktop.svg") no-repeat bottom
       right;
+    padding-bottom: 225px;
   }
 
   .contact-container {
@@ -918,7 +891,6 @@ footer > .socials {
   }
 
   footer {
-    margin-top: 225px;
     margin-bottom: 0;
   }
 
