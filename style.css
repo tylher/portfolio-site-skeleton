@@ -564,6 +564,7 @@ form {
   border-bottom-right-radius: 8px;
   position: relative;
   margin-left: 6px;
+  max-width: 53%;
 }
 
 .error-msg::before {
