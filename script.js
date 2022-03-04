@@ -4,7 +4,7 @@ const body = document.querySelector('body');
 const seeProject = document.querySelectorAll('.see-project');
 const goBack = document.querySelector('.cancel-icon-desktop');
 const projectTitle = document.querySelector('.modal-text-box h2');
-const projectDescription = document.querySelector('.modal-text-box');
+const projectDescription = document.querySelector('.modal-text-box p');
 const projectImage = document.querySelector('.project-image-desktop');
 const tecnologiesArr = document.querySelector('.modal-tech');
 const source = document.querySelector('.seeSource');
@@ -43,8 +43,8 @@ seeProject.forEach((btn) => {
   btn.addEventListener('click', () => {
     document.querySelector('.container').classList.toggle('blur');
     deleteChildListItems(tecnologiesArr);
-    const Description = btn.parentElement.childNodes[1].textContent;
-    const project = data.find((i) => i.name === Description);
+    const Title = btn.parentElement.childNodes[1].textContent;
+    const project = data.find((i) => i.name === Title);
     projectTitle.textContent = project.name;
     projectDescription.textContent = project.description;
     projectImage.src = project.imageUrl;
@@ -71,7 +71,7 @@ const errorMsg = document.querySelector(".error-msg");
 form.addEventListener("submit", (e) => {
   const reg1 = /[a-z]/g;
   const reg2 = /[A-Z]/g;
-  if (reg1.test(email.nodeValue.trim())&& !reg2.test(email.value.trim()) == false) {
+  if (reg1.test(email.value.trim())&& !reg2.test(email.value.trim()) == false) {
     e.preventDefault();
     errorMsg.textContent = "Your email should be in lowercase";
     errorMsg.style.display = "inline";
