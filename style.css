@@ -275,7 +275,7 @@ footer p {
 }
 
 .text-box {
-  height: 222px;
+  min-height: 222px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -315,8 +315,11 @@ footer p {
 
 .tech {
   display: inline-flex;
-  margin: auto 11px;
+  margin: auto;
   gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-tech li {
