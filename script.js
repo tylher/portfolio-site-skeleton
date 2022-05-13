@@ -76,6 +76,9 @@ const projectImage = document.querySelector('.project-image-desktop');
 const tecnologiesArr = document.querySelector('.modal-tech');
 const source = document.querySelector('.seeSource');
 const live = document.querySelector('.seeLive');
+const mobileNav = document.querySelector('.mobile-header-container>a');
+const navLinks = document.querySelectorAll('.nav-links');
+const exitNav = document.querySelector('.exit-nav');
 
 function createChildItem(item) {
   const li = document.createElement('li');
@@ -147,4 +150,25 @@ form.addEventListener('submit', (e) => {
     }, 5000);
     email.value = email.value.toLowerCase();
   }
+});
+
+window.addEventListener('scroll', () => {
+  const Header = document.querySelector('header');
+  if (window.scrollY > 10) {
+    Header.classList.add('fixed-nav');
+  } else { Header.classList.remove('fixed-nav'); }
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    closeNav();
+  });
+});
+
+mobileNav.addEventListener('click', () => {
+  displayNav();
+});
+
+exitNav.addEventListener('click', () => {
+  closeNav();
 });

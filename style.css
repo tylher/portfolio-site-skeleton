@@ -41,7 +41,6 @@ body {
 }
 
 .mobile-header-container {
-  margin-top: 44px;
   display: flex;
   justify-content: space-between;
   padding: 10px 24px;
@@ -49,7 +48,6 @@ body {
 }
 
 .mobile-menu {
-  /* display: none; */
   position: fixed;
   background: #fff;
   width: 100%;
@@ -137,6 +135,14 @@ body {
 .resume-btn a {
   color: #fff;
   text-decoration: none;
+}
+
+.fixed-nav {
+  background-color: white;
+  box-shadow: 0 3px 5px rgb(170, 170, 170);
+  position: fixed;
+  z-index: 2;
+  width: 100%;
 }
 
 .btn-group a {
@@ -698,6 +704,7 @@ footer > .socials {
 
   header {
     margin-top: 0;
+    padding: 20px;
   }
 
   header > .mobile-menu {
@@ -711,7 +718,6 @@ footer > .socials {
     position: static;
     background-color: transparent;
     box-shadow: none;
-    margin-top: 20px;
   }
 
   .mobile-menu .navigation {
@@ -723,6 +729,7 @@ footer > .socials {
     margin-left: 0;
     width: 25%;
     z-index: 1;
+    position: fixed;
   }
 
   nav > .navigation li {
