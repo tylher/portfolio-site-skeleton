@@ -13,8 +13,6 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
@@ -41,7 +39,7 @@ Install chrome web browser [here](https://www.google.com/chrome/?brand=CHBD&gcli
 
 - visit the github repository and clone [here](https://github.com/tylher/hello-microverse)
 
-- start editing using your local developmen environment.
+- start editing using your local development environment (VSCODE).
 
 ### Live Demo
 

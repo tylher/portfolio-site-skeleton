@@ -21,10 +21,17 @@ body {
   position: relative;
 }
 
-.blur {
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  background-color: rgba(193, 199, 208, 1);
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 19;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  background-color: rgba(152, 155, 158, 0.459);
 }
 
 .container {
@@ -42,17 +49,18 @@ body {
 }
 
 .mobile-menu {
-  display: none;
+  /* display: none; */
   position: fixed;
   background: #fff;
   width: 100%;
-  top: 0;
+  top: -100%;
   left: 0;
   padding: 62px 28px 0 38px;
   height: 90vh;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  transition: all 2s;
   z-index: 10;
 }
 
@@ -568,7 +576,7 @@ form {
 }
 
 .error-msg::before {
-  content: '';
+  content: "";
   height: 0;
   width: 0;
   border-bottom: transparent solid 10px;
@@ -613,6 +621,10 @@ footer > .socials {
   background-color: #fff;
 }
 
+.modal::-webkit-scrollbar {
+  width: 0;
+}
+
 .modal-wrapper {
   display: none;
   top: 0;
@@ -622,6 +634,7 @@ footer > .socials {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  z-index: 20;
 }
 
 .modal-image-box-desktop {
@@ -802,7 +815,8 @@ footer > .socials {
   .about {
     margin-top: 89px;
     padding-top: 103px;
-    background: url("images/illustration-about\ me-1-desktop.svg") top right no-repeat;
+    background: url("images/illustration-about\ me-1-desktop.svg") top right
+      no-repeat;
   }
 
   .cards {
@@ -846,11 +860,11 @@ footer > .socials {
   }
 
   .contact {
-    background:
-      url("images/illustration-1-contact-form-desktop.svg") no-repeat 0% 100%,
+    background: url("images/illustration-1-contact-form-desktop.svg") no-repeat
+        0% 100%,
       url("images/illustration-2-contact-form-desktop.svg") no-repeat 25% 80%,
       url("images/contact\ form-illustratoin-3-desktop.svg") no-repeat bottom
-      right;
+        right;
     padding-bottom: 225px;
   }
 
@@ -924,11 +938,11 @@ footer > .socials {
     font-size: 16px;
     line-height: 30px;
     color: #344563;
-    grid-column: 1/span 2;
+    grid-column: 1 / span 2;
   }
 
   .modal-tech {
-    grid-column: 1/span 2;
+    grid-column: 1 / span 2;
   }
 
   .cancel-icon-desktop {

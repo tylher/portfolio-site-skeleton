@@ -89,62 +89,62 @@ function deleteChildListItems(parent) {
   }
 }
 
-/* eslint-disable */
 const displayNav = () => {
-  /* eslint-enable */
   document.body.getElementsByClassName('header-not-visible')[0].style.display = 'none';
-  document.body.getElementsByClassName('mobile-menu')[0].style.display = 'block';
+  document.body.getElementsByClassName('mobile-menu')[0].style.top = 0;
   body.style.height = '100vh';
   body.style.overflowY = 'hidden';
 };
-/* eslint-disable */
+
 const closeNav = () => {
-  /* eslint-enable */
   document.body.getElementsByClassName('header-not-visible')[0].style.display = 'flex';
-  document.body.getElementsByClassName('mobile-menu')[0].style.display = 'none';
+  document.body.getElementsByClassName('mobile-menu')[0].style.top = '-100%';
   body.style.height = 'auto';
   body.style.overflowY = 'scroll';
 };
 
 seeProject.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    document.querySelector('.container').classList.toggle('blur');
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
     deleteChildListItems(tecnologiesArr);
     const Title = btn.parentElement.childNodes[1].textContent;
     const project = data.find((i) => i.name === Title);
     projectTitle.textContent = project.name;
     projectDescription.textContent = project.description;
     projectImage.src = project.imageUrl;
-    /* eslint-disable */
     project.tecnologies.map((tech) => {
       tecnologiesArr.appendChild(createChildItem(tech));
+      return '';
     });
     live.href = project.ProjectUrls.seeLive;
     source.href = project.ProjectUrls.seeSource;
-
     document.querySelector('.modal-wrapper').style.display = 'flex';
+    document.querySelector('.cover').style.display = 'block';
+    document.body.style.overflowY = 'hidden';
   });
 });
 
-goBack.addEventListener('click', () => {
-  document.querySelector('.container').classList.toggle('blur');
+goBack.addEventListener('click', (e) => {
+  e.preventDefault();
   document.querySelector('.modal-wrapper').style.display = 'none';
+  document.querySelector('.cover').style.display = 'none';
+  document.body.style.overflowY = 'auto';
 });
 
-const email = document.getElementById("Email");
-const form = document.querySelector(".contact-us");
-const errorMsg = document.querySelector(".error-msg");
+const email = document.getElementById('Email');
+const form = document.querySelector('.contact-us');
+const errorMsg = document.querySelector('.error-msg');
 
-form.addEventListener("submit", (e) => {
+form.addEventListener('submit', (e) => {
   const reg1 = /[a-z]/g;
   const reg2 = /[A-Z]/g;
-  if (reg1.test(email.value.trim())&& !reg2.test(email.value.trim()) == false) {
+  if (reg1.test(email.value.trim()) && !reg2.test(email.value.trim()) === false) {
     e.preventDefault();
-    errorMsg.textContent = "Your email should be in lowercase";
-    errorMsg.style.display = "inline-flex";
+    errorMsg.textContent = 'Your email should be in lowercase';
+    errorMsg.style.display = 'inline-flex';
+    setTimeout(() => {
+      errorMsg.style.display = 'none';
+    }, 5000);
     email.value = email.value.toLowerCase();
   }
 });
-
-
-
