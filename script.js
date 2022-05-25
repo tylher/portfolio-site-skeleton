@@ -179,7 +179,10 @@ prevProj.addEventListener('click', () => {
   const currentProj = data.find((proj) => proj.name === projectTitle.textContent);
   const currentPos = data.indexOf(currentProj);
   const prevPos = currentPos - 1;
-  if (prevPos >= 0) {
+  if (currentPos === 1) {
+    prevProj.disabled = true;
+  }
+  if (currentPos >= 1) {
     nextProj.disabled = false;
     deleteChildListItems(tecnologiesArr);
     projectTitle.textContent = data[prevPos].name;
@@ -191,8 +194,6 @@ prevProj.addEventListener('click', () => {
     });
     live.href = data[prevPos].ProjectUrls.seeLive;
     source.href = data[prevPos].ProjectUrls.seeSource;
-  } else {
-    prevProj.disabled = true;
   }
 });
 
@@ -200,7 +201,7 @@ nextProj.addEventListener('click', () => {
   const currentProj = data.find((proj) => proj.name === projectTitle.textContent);
   const currentPos = data.indexOf(currentProj);
   const nextPos = currentPos + 1;
-  if (nextPos < data.length) {
+  if (currentPos < data.length - 1) {
     prevProj.disabled = false;
     deleteChildListItems(tecnologiesArr);
     projectTitle.textContent = data[nextPos].name;
@@ -212,7 +213,8 @@ nextProj.addEventListener('click', () => {
     });
     live.href = data[nextPos].ProjectUrls.seeLive;
     source.href = data[nextPos].ProjectUrls.seeSource;
-  } else {
+  }
+  if (nextPos === data.length - 1) {
     nextProj.disabled = true;
   }
 });
