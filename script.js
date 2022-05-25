@@ -216,3 +216,20 @@ nextProj.addEventListener('click', () => {
     nextProj.disabled = true;
   }
 });
+
+window.addEventListener('scroll', () => {
+  const sections = document.querySelectorAll('section');
+  sections.forEach((sec) => {
+    const top = window.scrollY;
+    const offset = sec.offsetTop - 100;
+    const height = sec.offsetHeight;
+    const id = sec.getAttribute('id');
+
+    if (top >= offset && top < (offset + height)) {
+      navLinks.forEach((link) => {
+        link.classList.remove('activePage');
+        document.querySelector(`.nav-links[href*=${id}]`).classList.add('activePage');
+      });
+    }
+  });
+});

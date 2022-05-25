@@ -16,6 +16,10 @@ li > a {
   text-decoration: none;
 }
 
+.activePage{
+  border-bottom: #26825a 2px solid;
+}
+
 body {
   font-family: "Inter", sans-serif;
   position: relative;
