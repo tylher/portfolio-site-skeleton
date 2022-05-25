@@ -4,7 +4,7 @@ const data = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     imageUrl: 'images/Snapshoot-Portfolio.svg',
-    tecnologies: ['Ruby on rails', 'css', 'JavScript'],
+    tecnologies: ['Ruby on rails', 'css', 'JavScript', 'React'],
     ProjectUrls: {
       seeLive: 'https://tylher.github.io/portfolio-site-skeleton/',
       seeSource: 'https://github.com/tylher/portfolio-site-skeleton',
@@ -79,6 +79,8 @@ const live = document.querySelector('.seeLive');
 const mobileNav = document.querySelector('.mobile-header-container>a');
 const navLinks = document.querySelectorAll('.nav-links');
 const exitNav = document.querySelector('.exit-nav');
+const nextProj = document.querySelector('.next-proj');
+const prevProj = document.querySelector('.prev-proj');
 
 function createChildItem(item) {
   const li = document.createElement('li');
@@ -171,4 +173,46 @@ mobileNav.addEventListener('click', () => {
 
 exitNav.addEventListener('click', () => {
   closeNav();
+});
+
+prevProj.addEventListener('click', () => {
+  const currentProj = data.find((proj) => proj.name === projectTitle.textContent);
+  const currentPos = data.indexOf(currentProj);
+  const prevPos = currentPos - 1;
+  if (prevPos >= 0) {
+    nextProj.disabled = false;
+    deleteChildListItems(tecnologiesArr);
+    projectTitle.textContent = data[prevPos].name;
+    projectDescription.textContent = data[prevPos].description;
+    projectImage.src = data[prevPos].imageUrl;
+    data[prevPos].tecnologies.map((tech) => {
+      tecnologiesArr.appendChild(createChildItem(tech));
+      return '';
+    });
+    live.href = data[prevPos].ProjectUrls.seeLive;
+    source.href = data[prevPos].ProjectUrls.seeSource;
+  } else {
+    prevProj.disabled = true;
+  }
+});
+
+nextProj.addEventListener('click', () => {
+  const currentProj = data.find((proj) => proj.name === projectTitle.textContent);
+  const currentPos = data.indexOf(currentProj);
+  const nextPos = currentPos + 1;
+  if (nextPos < data.length) {
+    prevProj.disabled = false;
+    deleteChildListItems(tecnologiesArr);
+    projectTitle.textContent = data[nextPos].name;
+    projectDescription.textContent = data[nextPos].description;
+    projectImage.src = data[nextPos].imageUrl;
+    data[nextPos].tecnologies.map((tech) => {
+      tecnologiesArr.appendChild(createChildItem(tech));
+      return '';
+    });
+    live.href = data[nextPos].ProjectUrls.seeLive;
+    source.href = data[nextPos].ProjectUrls.seeSource;
+  } else {
+    nextProj.disabled = true;
+  }
 });

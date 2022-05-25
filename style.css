@@ -529,6 +529,17 @@ textarea {
   border: #36b37f solid 3px;
 }
 
+.prev-next button {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background: none;
+  border: none;
+  align-items: center;
+  font-size: 15px;
+  cursor: pointer;
+}
+
 .contact-form button {
   padding: 12px;
   font-weight: 500;
@@ -654,9 +665,14 @@ footer > .socials {
 }
 
 .cancel-icon-desktop {
-  position: absolute;
-  top: 16px;
-  right: 16px;
+  position: fixed;
+  top: 7%;
+  right: 10%;
+  width: 5%;
+}
+
+.cancel-icon-desktop img {
+  width: 100%;
 }
 
 .modal h2 {
@@ -678,8 +694,14 @@ footer > .socials {
   display: flex;
   align-items: center;
   gap: 16px;
-  justify-content: space-between;
 }
+
+.prev-next {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 /* styling for desktop view */
 @media screen and (min-width: 992px) {
@@ -822,7 +844,8 @@ footer > .socials {
   .about {
     margin-top: 89px;
     padding-top: 103px;
-    background: url("images/illustration-about\ me-1-desktop.svg") top right
+    background:
+      url("images/illustration-about\ me-1-desktop.svg") top right
       no-repeat;
   }
 
@@ -867,11 +890,12 @@ footer > .socials {
   }
 
   .contact {
-    background: url("images/illustration-1-contact-form-desktop.svg") no-repeat
-        0% 100%,
+    background:
+      url("images/illustration-1-contact-form-desktop.svg") no-repeat
+      0% 100%,
       url("images/illustration-2-contact-form-desktop.svg") no-repeat 25% 80%,
       url("images/contact\ form-illustratoin-3-desktop.svg") no-repeat bottom
-        right;
+      right;
     padding-bottom: 225px;
   }
 
@@ -953,13 +977,15 @@ footer > .socials {
   }
 
   .cancel-icon-desktop {
-    position: static;
+    position: sticky;
     display: inline-block;
     background: #ebecf0;
     padding: 8px;
     border-radius: 8px;
     float: right;
     margin-bottom: 14px;
+    top: 0;
+    right: 15px;
   }
 
   .modal-text-box {
@@ -970,6 +996,7 @@ footer > .socials {
 
   .modal-image-box-desktop {
     display: block;
+    position: relative;
     max-width: 100%;
   }
 
