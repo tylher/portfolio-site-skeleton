@@ -1,74 +1,63 @@
 const data = [
   {
-    name: 'Events price calculator',
+    name: 'SHOWNET',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageUrl: 'images/Snapshoot-Portfolio.svg',
-    tecnologies: ['Ruby on rails', 'css', 'JavScript', 'React'],
+      'A movie database website that displays all the information about a show including the discription and the rating of the show. You can search for a show, like and also comment on any of your favourite show. This project consumed TVmaze api.',
+    imageUrl: 'images/projects/SHOWNET.jpg',
+    tecnologies: ['HTML', 'css', 'JavScript'],
     ProjectUrls: {
-      seeLive: 'https://tylher.github.io/portfolio-site-skeleton/',
-      seeSource: 'https://github.com/tylher/portfolio-site-skeleton',
+      seeLive: 'https://tylher.github.io/Javascript-capstone/',
+      seeSource: 'https://github.com/tylher/Javascript-capstone',
     },
   },
   {
-    name: 'Reaching for the stars',
+    name: 'To-do App',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageUrl: './images/Snapshoot-Portfolio.svg',
-    tecnologies: ['Ruby on rails', 'css', 'JavScript'],
+      'This project lets you create a to-do list for activities you need to do for some time. Each activity has a box that can be checked when completed',
+    imageUrl: './images/projects/To-do-app.png',
+    tecnologies: ['HTML', 'css', 'JavScript'],
     ProjectUrls: {
       seeLive: 'https://tylher.github.io/portfolio-site-skeleton/',
-      seeSource: 'https://github.com/tylher/portfolio-site-skeleton',
+      seeSource: 'https://github.com/tylher/To-do-List',
     },
   },
   {
-    name: 'Technology meetup website',
+    name: 'Space travelers Hub',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageUrl: 'images/Snapshoot-Portfolio.svg',
-    tecnologies: ['Ruby on rails', 'css', 'JavScript'],
+      'space-travelers-hub is web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
+    imageUrl: 'images/projects/space-rocket.png',
+    tecnologies: ['React', 'Redux', 'JSX', 'css'],
     ProjectUrls: {
-      seeLive: 'https://tylher.github.io/portfolio-site-skeleton/',
-      seeSource: 'https://github.com/tylher/portfolio-site-skeleton',
+      seeLive: 'https://627d39b107b3bf0f75556474--dazzling-travesseiro-1e9711.netlify.app/',
+      seeSource: 'https://github.com/IfzaRasool/space-travelers-hub',
     },
   },
   {
-    name: 'Multi-Post Stories Gain+Glory',
+    name: 'BookStore App',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageUrl: 'images/Snapshoot-Portfolio.svg',
-    tecnologies: ['Ruby on rails', 'css', 'JavScript'],
+      'The Bookstore is a book register website that stores books using the title and author. It is an MVP version of it that allows you to: Display a list of books, Add a book, Remove a selected book',
+    imageUrl: 'images/projects/Bookstore.png',
+    tecnologies: ['React', 'Redux', 'css', 'JavScript'],
     ProjectUrls: {
-      seeLive: 'https://tylher.github.io/portfolio-site-skeleton/',
-      seeSource: 'https://github.com/tylher/portfolio-site-skeleton',
+      seeLive: 'https://dev--tylher-bookstore.netlify.app/',
+      seeSource: 'https://github.com/tylher/bookstore-react',
     },
   },
   {
-    name: 'Keeping track of hundreds of components',
+    name: 'Covid-19 Stat App',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageUrl: 'images/Snapshoot-Portfolio.svg',
-    tecnologies: ['Ruby on rails', 'css', 'JavScript'],
+      'This app is a react app that consumes a covid-19 stat API and manipulates the data to display the vaccination metrics country based on continent and country category',
+    imageUrl: 'images/projects/covid19-vaccination.jpg',
+    tecnologies: ['React', 'CSS', 'JavScript', 'Redux'],
     ProjectUrls: {
-      seeLive: 'https://tylher.github.io/portfolio-site-skeleton/',
-      seeSource: 'https://github.com/tylher/portfolio-site-skeleton',
+      seeLive: 'https://covid-19-stat-web-app.netlify.app/',
+      seeSource: 'https://github.com/tylher/covid-19-stat-web-app',
     },
   },
-  {
-    name: 'Daily Task Saver',
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageUrl: 'images/Snapshoot-Portfolio.svg',
-    tecnologies: ['Ruby on rails', 'css', 'JavScript'],
-    ProjectUrls: {
-      seeLive: 'https://tylher.github.io/portfolio-site-skeleton/',
-      seeSource: 'https://github.com/tylher/portfolio-site-skeleton',
-    },
-  },
+
 ];
 
 const body = document.querySelector('body');
-const seeProject = document.querySelectorAll('.see-project');
 const goBack = document.querySelector('.cancel-icon-desktop');
 const projectTitle = document.querySelector('.modal-text-box h2');
 const projectDescription = document.querySelector('.modal-text-box p');
@@ -76,11 +65,33 @@ const projectImage = document.querySelector('.project-image-desktop');
 const tecnologiesArr = document.querySelector('.modal-tech');
 const source = document.querySelector('.seeSource');
 const live = document.querySelector('.seeLive');
+const projects = document.querySelector('.Works');
 const mobileNav = document.querySelector('.mobile-header-container>a');
 const navLinks = document.querySelectorAll('.nav-links');
 const exitNav = document.querySelector('.exit-nav');
 const nextProj = document.querySelector('.next-proj');
 const prevProj = document.querySelector('.prev-proj');
+
+data.map((sample) => {
+  const projectBody = `<div>
+<div class="image-box">
+  <img src="${sample.imageUrl}"/>
+</div>
+<div class="text-box">
+  <h2>${sample.name}</h2>
+  <ul class="tech">
+    ${sample.tecnologies.map((tech) => `<li>${tech}</li>`).join('')}
+  </ul>
+  <div class="see-project"><a>See Project</a></div>
+</div>
+</div>`;
+
+  projects.innerHTML += projectBody;
+
+  return '';
+});
+
+const seeProject = document.querySelectorAll('.see-project');
 
 function createChildItem(item) {
   const li = document.createElement('li');

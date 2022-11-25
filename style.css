@@ -290,6 +290,14 @@ footer p {
 
 .image-box {
   height: 252px;
+  display: flex;
+}
+
+.image-box img{
+ height: 100%;
+ width: 100%;
+ margin: auto;
+ object-fit: cover;
 }
 
 .text-box {
