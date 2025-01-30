@@ -16,7 +16,7 @@ li > a {
   text-decoration: none;
 }
 
-.activePage{
+.activePage {
   border-bottom: #26825a 2px solid;
 }
 
@@ -293,11 +293,11 @@ footer p {
   display: flex;
 }
 
-.image-box img{
- height: 100%;
- width: 100%;
- margin: auto;
- object-fit: cover;
+.image-box img {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  object-fit: cover;
 }
 
 .text-box {
@@ -442,7 +442,7 @@ footer p {
 }
 
 .about-card {
-  height: 352px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -714,7 +714,6 @@ footer > .socials {
   align-items: center;
 }
 
-
 /* styling for desktop view */
 @media screen and (min-width: 992px) {
   .headline {
@@ -856,8 +855,7 @@ footer > .socials {
   .about {
     margin-top: 89px;
     padding-top: 103px;
-    background:
-      url("images/illustration-about\ me-1-desktop.svg") top right
+    background: url("images/illustration-about\ me-1-desktop.svg") top right
       no-repeat;
   }
 
@@ -902,12 +900,11 @@ footer > .socials {
   }
 
   .contact {
-    background:
-      url("images/illustration-1-contact-form-desktop.svg") no-repeat
-      0% 100%,
+    background: url("images/illustration-1-contact-form-desktop.svg") no-repeat
+        0% 100%,
       url("images/illustration-2-contact-form-desktop.svg") no-repeat 25% 80%,
       url("images/contact\ form-illustratoin-3-desktop.svg") no-repeat bottom
-      right;
+        right;
     padding-bottom: 225px;
   }
 

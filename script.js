@@ -1,5 +1,38 @@
 const data = [
   {
+    name: 'FeedbagArihub Website',
+    description:
+      'A landing website for an agrotech company, FeedBag Agrihub. Feedbag Agrihub is a dual solution enterprise revolutionizing food production through soilless farming and a Blockchain-powered platform that connects and rewards active players (farmers, aggregators & consumers) in the food supply chain and sets to transform the way we grow, distribute and consume food.',
+    imageUrl: 'images/projects/feedbagagrihub_website.png',
+    tecnologies: ['React', 'Redux', 'PHP', 'JavScript','CPanel'],
+    ProjectUrls: {
+      seeLive: 'https://feedbag-agrihub-eight.vercel.app/',
+      seeSource: '',
+    },
+  },
+  {
+    name: 'Balancee Custome Web App',
+  description:
+    'A multifaceted software solution designed to streamline the entire auto repair process for both customers and service providers. With intuitive features such as seamless booking functionality, users can effortlessly schedule repair appointments online, selecting preferred dates and services with ease.',
+  imageUrl: 'images/projects/balancee_customer_web_app.png',
+  tecnologies: ['React', 'Redux', 'css', 'JavScript','TailwindCSS','Java',' Spring Framework'],
+  ProjectUrls: {
+    seeLive: 'https://customer.balancee.app/',
+    seeSource: '',
+  },
+  },
+  {
+    name: 'Balancee Business Web App',
+  description:
+    'A multifaceted software solution designed to streamline the entire auto repair process for both customers and service providers. With intuitive features such as seamless booking functionality, repair stations can manage all services and bookings for their customers',
+  imageUrl: 'images/projects/balancee_business.png',
+  tecnologies: ['React', 'Redux', 'css', 'JavScript','TailwindCSS','Java',' Spring Framework'],
+  ProjectUrls: {
+    seeLive: 'https://balancee.balancee.app/',
+    seeSource: '',
+  },
+  },
+  {
     name: 'SHOWNET',
     description:
       'A movie database website that displays all the information about a show including the discription and the rating of the show. You can search for a show, like and also comment on any of your favourite show. This project consumed TVmaze api.',
@@ -32,28 +65,7 @@ const data = [
       seeSource: 'https://github.com/IfzaRasool/space-travelers-hub',
     },
   },
-  {
-    name: 'BookStore App',
-    description:
-      'The Bookstore is a book register website that stores books using the title and author. It is an MVP version of it that allows you to: Display a list of books, Add a book, Remove a selected book',
-    imageUrl: 'images/projects/Bookstore.png',
-    tecnologies: ['React', 'Redux', 'css', 'JavScript'],
-    ProjectUrls: {
-      seeLive: 'https://dev--tylher-bookstore.netlify.app/',
-      seeSource: 'https://github.com/tylher/bookstore-react',
-    },
-  },
-  {
-    name: 'Covid-19 Stat App',
-    description:
-      'This app is a react app that consumes a covid-19 stat API and manipulates the data to display the vaccination metrics country based on continent and country category',
-    imageUrl: 'images/projects/covid19-vaccination.jpg',
-    tecnologies: ['React', 'CSS', 'JavScript', 'Redux'],
-    ProjectUrls: {
-      seeLive: 'https://covid-19-stat-web-app.netlify.app/',
-      seeSource: 'https://github.com/tylher/covid-19-stat-web-app',
-    },
-  },
+ 
 
 ];
 
